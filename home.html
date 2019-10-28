@@ -19,25 +19,33 @@
     body,
     header,
     .carousel {
-      height: 60vh;
+      height: 100vh;
     }
 
     @media (max-width: 740px) {
 
       html,
       body,
-      header,
-      .carousel {
-        height: 100vh;
+      header
+      {
+        height: 100%;
       }
     }
-
+    .hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+    }
+    h1 {
+    letter-spacing: 8px;
+    }
+    h5 {
+    letter-spacing: 3px;
+    }
     @media (min-width: 800px) and (max-width: 850px) {
 
       html,
       body,
-      header,
-      .carousel {
+      header{
         height: 100vh;
       }
     }
@@ -51,7 +59,7 @@
   </style>
 </head>
 
-<body>
+<body class="indigo-skin">
 
   <header>
 
@@ -60,8 +68,8 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-          <strong>MDB</strong>
+        <a class="navbar-brand" href="https://all-in-one4her.eu/">
+          <img src="images/logos/logo-side.png" height="40" alt="all-in-one-4-her logo">
         </a>
 
         <!-- Collapse -->
@@ -74,41 +82,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
+          <ul class="navbar-nav mx-auto font-weight-light">
+            
+            <li class="nav-item pr-4">
+              <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item pr-4">
+              <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Roadmap</a>
+            </li>
+            <li class="nav-item dropdown pr-4">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Study
               </a>
+              <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                <a class="dropdown-item" href="#">Language Learning</a>
+                <a class="dropdown-item" href="#">Diploma Recognition</a>
+              </div>
+            </li>    
+            <li class="nav-item pr-4">
+              <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free
-                download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free tutorials</a>
+              <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Mentoring</a>
             </li>
           </ul>
 
+          
           <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-                target="_blank">
-                <i class="fab fa-github mr-2"></i>MDB GitHub
-              </a>
+          <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                  <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Sign Up</a>
+                  </li>
+            <li class="nav-item dropdown border-left border-white">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span>EN</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                    <a class="dropdown-item" href="#nl"><span class="flag-icon flag-icon-fr"> </span>NL</a>
+                </div>
             </li>
           </ul>
 
@@ -118,147 +131,34 @@
     </nav>
     <!-- Navbar -->
 
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active">
-          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/nature7.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>Learn Bootstrap 4 with MDB</strong>
-                </h1>
-
-                <p>
-                  <strong>Best & free guide of responsive web design</strong>
-                </p>
-
-                <p class="mb-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                    written versions
-                    available. Create your own, stunning website.</strong>
-                </p>
-
-                <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                  free tutorial
-                  <i class="fas fa-graduation-cap ml-2"></i>
-                </a>
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
+    <!-- Full Page Intro -->
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: linear-gradient(
+    rgba(160, 129, 129, 0.45), 
+    rgba(155, 135, 135, 0.45)
+  ), url('../images/headers/hp-header.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center">
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+              data-wow-delay="0.3s"><strong>All-in-one-4-HER</strong></h1>
+            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>FAST-TRACK INTEGRATION OF HIGHLY EDUCATED REFUGEES (HER) INTO LABOUR MARKET</strong></h5>
+            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About Us</a>
           </div>
+          <!--Grid column-->
         </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>Learn Bootstrap 4 with MDB</strong>
-                </h1>
-
-                <p>
-                  <strong>Best & free guide of responsive web design</strong>
-                </p>
-
-                <p class="mb-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                    written versions
-                    available. Create your own, stunning website.</strong>
-                </p>
-
-                <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                  free tutorial
-                  <i class="fas fa-graduation-cap ml-2"></i>
-                </a>
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/47.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong>Learn Bootstrap 4 with MDB</strong>
-                </h1>
-
-                <p>
-                  <strong>Best & free guide of responsive web design</strong>
-                </p>
-
-                <p class="mb-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                    written versions
-                    available. Create your own, stunning website.</strong>
-                </p>
-
-                <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                  free tutorial
-                  <i class="fas fa-graduation-cap ml-2"></i>
-                </a>
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Third slide-->
-
+        <!--Grid row-->
       </div>
-      <!--/.Slides-->
-
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
-
+      <!-- Content -->
     </div>
-    <!--/.Carousel Wrapper-->
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
 
   </header>
 
