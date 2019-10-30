@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>All-in-one4HER</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -15,21 +15,20 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
   <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 100vh;
+    html, body, header{
+      height: 100%;
     }
-
     @media (max-width: 740px) {
-
-      html,
-      body,
-      header
+      html, body, header
       {
-        height: 100%;
+        height: 100vh;
       }
+    }
+    #navbar1{
+      font-size: 15px; 
+    }
+    #navbar2{
+      font-size: 15px; 
     }
     .hr-light {
     border-top: 3px solid #fff;
@@ -42,18 +41,49 @@
     letter-spacing: 3px;
     }
     @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header{
+      html, body, header {
         height: 100vh;
       }
     }
-
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
         background: #929FBA !important;
       }
+    }
+    .md-avatar {
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+    }
+    .md-avatar.size-1 {
+      width: 40px;
+      height: 40px;
+    }
+    .md-avatar.size-2 {
+      width: 70px;
+      height: 70px;
+    }
+    .md-avatar.size-3 {
+      width: 90px;
+      height: 90px;
+    }
+    .md-avatar.size-4 {
+      width: 110px;
+      height: 110px;
+    }
+    .rounded-circle{
+      border-color: white;
+      border-style: solid;
+      border-width: thick;
+    }
+    .listim{
+      font-size: 13px;
+    }
+    .fa-check {
+      font-size: 12px;
+    }
+    .btn-rounded {
+    border-radius: 10em;
     }
 
   </style>
@@ -69,7 +99,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand" href="https://all-in-one4her.eu/">
-          <img src="images/logos/logo-side.png" height="40" alt="all-in-one-4-her logo">
+          <img src="images/logos/logo-side.png" height="50" alt="all-in-one-4-her logo">
         </a>
 
         <!-- Collapse -->
@@ -82,7 +112,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
           <!-- Left -->
-          <ul class="navbar-nav mx-auto font-weight-light">
+          <ul class="navbar-nav mx-auto font-weight-light" id="navbar1">
             
             <li class="nav-item pr-4">
               <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About Us</a>
@@ -109,7 +139,7 @@
 
           
           <!-- Right -->
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" id="navbar2">
               
               <li class="nav-item">
                   <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Login</a>
@@ -132,32 +162,32 @@
     <!-- Navbar -->
 
     <!-- Full Page Intro -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: linear-gradient(
-    rgba(160, 129, 129, 0.45), 
-    rgba(155, 135, 135, 0.45)
-  ), url('../images/headers/hp-header.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-12 mb-4 white-text text-center">
-            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
-              data-wow-delay="0.3s"><strong>All-in-one-4-HER</strong></h1>
-            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>FAST-TRACK INTEGRATION OF HIGHLY EDUCATED REFUGEES (HER) INTO LABOUR MARKET</strong></h5>
-            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About Us</a>
+    <div class="view" style="background-image: url('../images/headers/header.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 indigo-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">All-in-one4HER</h1>
+              <hr class="hr-light">
+              <h5 class="mb-4">Fast-track Integration of Highly Educated Refugees(HER) into Labour Market</h5>
+              <a class="btn btn-default">Sign Up</a>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            
+            <!--Grid column-->
           </div>
-          <!--Grid column-->
+          <!--Grid row-->
         </div>
-        <!--Grid row-->
+        <!-- Content -->
       </div>
-      <!-- Content -->
+      <!-- Mask & flexbox options-->
     </div>
-    <!-- Mask & flexbox options-->
-  </div>
+    <!-- Full Page Intro -->
   <!-- Full Page Intro -->
 
   </header>
@@ -167,6 +197,203 @@
     <div class="container">
 
       <!--Section: Main info-->
+      
+      <section class="mt-5 wow fadeIn">
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+
+                      <!-- Background color -->
+                      <div class="card-up blue-gradient lighten-1">
+                        <br><br>
+                        <br>
+                        <br>
+                      </div>
+                    
+                      <!-- Avatar -->
+                      <div class="avatar mx-auto white mt-n5 border border-white rounded-circle rounded-lg">
+                        <img src="images/icons/HER.png" alt="Avatar" class="md-avatar rounded-circle size-4">
+                      </div>
+                    
+                      <!-- Content -->
+                      <div class="card-body text-center">
+                        <!-- Name -->
+                        <h4 class="card-title">I am a talent(HER)</h4>
+                
+                      </div>
+                        <!-- Quotation -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i> <span class="listim">Plan your path for a job</span>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i> <span class="listim">Find a FREE mentor or career coach</span>
+                              </li>
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Create your CV and motivation letter</span>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Find available job vacancies</span>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Get in contact with employers</span>
+                            </li>
+                            
+                          </ul>
+                      
+                    
+                    </div>
+                  <!-- Card -->
+                </div>
+                <div>&nbsp;</div>
+                <div class="col-sm">
+                  <!-- Card -->
+                  <div class="card testimonial-card">
+
+                      <!-- Background color -->
+                      <div class="card-up peach-gradient lighten-1">
+                        <br><br>
+                        <br>
+                        <br>
+                      </div>
+                    
+                      <!-- Avatar -->
+                      <div class="avatar mx-auto white mt-n5 border border-white rounded-circle rounded-lg">
+                        <img src="images/icons/mentor.png" alt="Avatar" class="md-avatar rounded-circle size-4">
+                      </div>
+                    
+                      <!-- Content -->
+                      <div class="card-body text-center">
+                        <!-- Name -->
+                        <h4 class="card-title">I am a mentor</h4>
+                
+                      </div>
+                        <!-- Quotation -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i> <span class="listim">Be a volunteer mentor</span>
+                            </li>
+                            
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Get FREE training</span>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Access to online training</span>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Be a certified mentor2work</span>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Assist HERs to find a job</span>
+                              </li>
+                            
+                          </ul>
+                      
+                    
+                    </div>
+                  <!-- Card -->
+                </div>
+                <div>&nbsp;</div>
+                <div class="col-sm">
+                  <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up purple-gradient lighten-1">
+                          <br><br>
+                          <br>
+                          <br>
+                        </div>
+                      
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-n5 border border-white rounded-circle rounded-lg">
+                          <img src="images/icons/employer.png" alt="Avatar" class="md-avatar rounded-circle size-4">
+                        </div>
+                      
+                        <!-- Content -->
+                        <div class="card-body text-center">
+                          <!-- Name -->
+                          <h4 class="card-title">I am an employer</h4>
+                  
+                        </div>
+                          <!-- Quotation -->
+                          <ul class="list-group">
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i> <span class="listim">Get informed with HOW TO EMPLOY HERs</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Get informed about benefits of employing HERs</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Get access to a pool of international talents</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Have direct contact with the talents</span>
+                              </li>
+                              
+                            </ul>
+                        
+                      
+                    </div> 
+                </div>
+                <div>&nbsp;</div>
+                <div class="col-sm">
+                  <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up aqua-gradient lighten-1">
+                          <br><br>
+                          <br>
+                          <br>
+                        </div>
+                      
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-n5 border border-white rounded-circle rounded-lg">
+                          <img src="images/icons/organization.png" alt="Avatar" class="md-avatar rounded-circle size-4">
+                        </div>
+                      
+                        <!-- Content -->
+                        <div class="card-body text-center">
+                          <!-- Name -->
+                          <h4 class="card-title">I am an organization</h4>
+                  
+                        </div>
+                          <!-- Quotation -->
+                          <ul class="list-group">
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i> <span class="listim">Access to information</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Access to data / statistics</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Enter / edit info of the target group</span>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="md-v-line"></div><i class="fas fa-check pr-1"></i><span class="listim">Follow your target group</span>
+                              </li>
+                              
+                            </ul>
+                        
+                      
+                    </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <section class="section wow fadeIn text-center " data-wow-delay="0.3s">
+        <br><br>
+        <!--Section heading-->
+        <h1 class="font-weight-bold text-center h1 my-5">Register & Access to Your Platform!</h1>
+        <!--Section description-->
+        <p class="text-center grey-text mb-5 mx-auto w-responsive lead"><i class="fas fa-quote-left"></i>&nbsp;&nbsp;Better and faster integrating highly educated refugees into the Flemish labour market by a platform bringing all relevant actors and initiatives together&nbsp;&nbsp;<i class="fas fa-quote-right"></i></p>
+        <button type="button" class="btn btn-outline-info waves-effect btn-rounded">Sign Up</button>
+        <br><br>
+      </section>
+
       <section class="mt-5 wow fadeIn">
 
         <!--Grid row-->
@@ -608,63 +835,230 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small mt-1 wow fadeIn">
+  
+   <div style="background-color: rgba(63, 81, 181, 0.7)">
+  <div class="container" >
 
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank"
-        role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start
-        free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
+      <!--Grid row-->
+      <div class="row">
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12">
+  
+          <!--Image-->
+          <div class="view overlay">
+            <img src="images/logos/beyond-horizan.png" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6">
+  
+          <!--Image-->
+          <div class="view overlay">
+            <img src="images/logos/oostande.png" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
 
-    <hr class="my-4">
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6">
+  
+                    <!--Image-->
+                    <div class="view overlay">
+                      <img src="images/logos/ucll.png" class="img-fluid"
+                        alt="">
+                      <a href="">
+                        <div class="mask rgba-white-light"></div>
+                      </a>
+                    </div>
+            
+                  </div>
+                  <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6">
+  
+          <!--Image-->
+          <div class="view overlay">
+            <img src="images/logos/papilia.png" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12">
+  
+          <!--Image-->
+          <div class="view overlay">
+            <img src="images/logos/turku.png" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6">
+  
+          <!--Image-->
+          <div class="view overlay">
+            <img src="images/logos/lamk.png" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="images/logos/" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+      </div>
+      <!--Grid row-->
+  
+    </div></div> 
 
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
+      
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+      
+          <!-- Grid row -->
+          <div class="row mt-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold">All-in-one4HER</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>Fast-track Integration of Highly Educated Refugees(HER) into Labour market</p>
+      
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Social</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <ul class="list-unstyled text-md-left">
+                    <li class="list-item">
+                      <a class="btn-floating btn-fb" href="https://www.facebook.com/Allinone4HER/">
+                        <i class="fab fa-facebook-f"> </i>
+                      </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="btn-floating btn-fb" href="https://www.linkedin.com/groups/8765305/">
+                          <i class="fab fa-linkedin-in"> </i>
+                        </a>
+                      </li>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                  <i class="fas fa-home mr-1"></i> Beyond the Horizon ISSG
+                  Da Vincilaan 1, 1932
+                  Zaventem Belgium</p>
+                <p><i class="fas fa-envelope mr-2"></i><a class="mailto" href="mailto:info@all-in-one4her.eu">info@all-in-one4her.eu</a></p>
+                <p><i class="fas fa-phone mr-1"></i>+32 (0) 2 801 13 57</p>
+  
+        
+              </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+                <div id="map-container-google-11" class="z-depth-1-half map-container-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.941608790304!2d4.457593515387565!3d50.88779106363689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dd019b0d41db%3A0xd4d9a3ad89158c74!2sBeyond%20the%20Horizon%20ISSG!5e0!3m2!1sen!2sbe!4v1572369241682!5m2!1sen!2sbe" width="450" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  
+                  </div>
+      
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+      
+            </div>
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+      <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-8 mt-md-0 mt-1">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase">ESF-EUROPEES SOCIAAL FONDS</h6>
+          <p>Deze website bevat alle informatie over het Europees Sociaal Fonds (ESF), het Asiel-, Integratie- en Migratiefonds (AMIF) en Europees Globalisatiefonds (EGF) in Vlaanderen.
+            Deze website wordt beheerd door het ESF Vlaanderen vzw.</p>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-1 mb-md-0">
+
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0">
+  
+            <img src="images/logos/footer-logo-werk.png" alt="">
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
     </div>
     <!--/.Copyright-->
 
