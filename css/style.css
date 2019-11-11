@@ -23,13 +23,15 @@ body,
   background-color: rgba(0, 0, 0, 0.2); }
 
 .top-nav-collapse {
-  background-color: #929FBA; }
+  background-color: #4EB9E9;
+}
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #929FBA; } }
+    background-color:  #2948A5;
+  } }
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #929FBA; }
+  background-color: #2948A5}
