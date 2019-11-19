@@ -934,7 +934,7 @@
                                 hope that’s ok, if not feel free to disable cookies in your
                                 browser. </p>
                         
-                        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Ok, thanks</a>
+                        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">I accept</a>
                       </div>
                     </div>
                   </div>
@@ -946,6 +946,40 @@
       
       
     </main>
+
+    <!-- Central Modal Surver Starts -->
+    <div class="modal fade" id="centralModalInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+            <p class="heading lead">Survey</p>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+            <div class="text-center">
+                <img src="./images/survey.png" style="width:100%;" alt="">
+                <p class="pt-3">Do not forget to take All-in-one4HER Survey</p>
+            </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+            <a type="button" href="https://docs.google.com/forms/d/e/1FAIpQLSffdiWRnfoapGe1nvdMsPriPwoKAhlur_PeJE2GaM91IWPbhA/viewform" class="btn btn-outline-primary">Get it now <i class="far fa-gem ml-1 text-primary"></i></a>
+            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No, thanks</a>
+            </div>
+        </div>
+        <!--/.Content-->
+        </div>
+    </div>
+    <!-- Central Modal Surver Ends-->
     
 
     <!-- FOOTER STARTS-->
@@ -1111,8 +1145,14 @@
         // Animations initialization
         new WOW().init();
         $(document).ready(function() {  
-  $('#modalCookie1').modal('show');
-});
+        $('#modalCookie1').modal('show');
+        });
+
+        setTimeout(function() {
+         $('#centralModalInfo').modal('show');
+        }, 5000);
+
+
  
     </script>
     
