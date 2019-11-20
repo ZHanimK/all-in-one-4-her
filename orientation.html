@@ -180,13 +180,15 @@
 
             <!-- Content -->
         </div>
-
         <!-- PAGE HEADER ENDS-->
 
     </header>
 
     <main>
+
         <div class="container h-5" id="content" style="z-index: 1;">
+
+            <!-- Breadcrumbs STARTS-->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -194,7 +196,11 @@
                     <li class="breadcrumb-item active">Orientation</li>
                 </ol>
             </nav>
-            <div class="row h-100">
+            <!-- Breadcrumbs ends-->
+
+            <div class="row">
+
+                <!-- Sidenav STARTS-->
                 <aside class="col-md-3">
                     <div class="mt-5 mb-3" id="sidemenu" style="font-size: 15px;">
                         <ul class="nav flex-md-column flex-row justify-content-between" style="padding-bottom: 5px;">
@@ -213,368 +219,342 @@
                         </ul>
                     </div>
                 </aside>
-                <main class="col py-3">
+                <!-- Sidenav ends-->
+
+                <!-- right content starts-->
+                <main class="col py-5">
                     <div class="row">
                         <div class="col">
 
-                            <div class="tab-content py-3">
+                            <!-- Flemish Labour Market STARTS-->
+                            <div>
+                                <h2 class="mb-3" id="market">Info on the Flemish Labour Market</h2><hr>
+                                <p style="text-indent: 3em;">If you are a highly educated refugee (HER) and you want to find a job at your level in Flanders, learning about Flemish labour market isn’t something you can do by only online search. You need to make contacts, find relevant networking events and mentors. Then you should know and follow these important tips.</p> <br>
 
-                                <div class="tab-pane active" id="tab1" role="tabpanel">
-                                    <h2 class="mb-3" id="market">Info on the Flemish Labour Market</h2>
-                                    <hr>
+                                <ul class="list-group">
+                                    <li class="list-group-item bg-info text-white">
+                                        <div class="md-v-line"></div><i class="fas fa-share mr-1 pr-3"></i> What is also important is your knowledge on the Flemish labor market.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="md-v-line"></div><i class="fas fa-cogs mr-3"></i><b>Do you want to know for which sectors and jobs there are many vacancies?</b> See the bottleneck jobs below.&nbsp;You can also find statistics on&nbsp; <u><a href="https://arvastat.vdab.be/" target="_blank" rel="">VDAB Arvastat</a></u> webpage.&nbsp;Via this page you can view the vacancies by sector or job for your region.
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="md-v-line"></div><i class="fas fa-cogs mr-3"></i><b>Do you want to know which jobs are available and how many job seekers are looking for the same job as you?</b>&nbsp;&nbsp;Then enter your profession on the VDAB application "<a href="https://www.vdab.be/trendsdoc/beroepen/index.html" target="_blank" rel="">Jobs in numbers</a>".</li>
+                                </ul>
+                                <br>
+                                <div class=" d-flex justify-content-center">
+                                    <img class="text-center justify-content-center" src="./images/orientation-img/job-in-numbers.png" style="width: 90%;" alt=""></div>
 
-                                    
-                                    <p style="text-indent: 3em;">If you are a highly educated refugee (HER) and you want to find a job at your level in Flanders, learning about Flemish labour market isn’t something you can do by only online search. You need to make contacts, find relevant networking events and mentors. Then you should know and follow these important tips.
+                                <div class="mt-4 d-flex justify-content-center">
+                                    <button class="btn btn-info" href="https://www.vdab.be/trends/vacatureanalyse.shtml"><i class="fas fa-clone left"></i> Statistics</button>
+                                    <button class="btn btn-info" href="https://www.vdab.be/trends/vacatureanalyse.shtml"><i class="fas fa-clone left"></i> Jobs in Numbers</button>
+                                </div>
+                            </div>
+                            <!-- Flemish Labour Market ends-->
 
-                                    </p>
 
-                                    <ul class="list-group">
-                                        <li class="list-group-item active">
-                                            <div class="md-v-line"></div><i class="fas fa-share mr-4 pr-3"></i> What is also important is your knowledge on the Flemish labor market.
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="md-v-line"></div><i class="fas fa-cogs mr-5"></i><b>Do you want to know for which sectors and jobs there are many vacancies?</b> See the bottleneck jobs below.&nbsp;You can also find statistics on&nbsp; <u><a href="https://arvastat.vdab.be/" target="_blank" rel="">VDAB Arvastat</a></u> webpage.&nbsp;Via this page you can view the vacancies by sector or job for your region.
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="md-v-line"></div><i class="fas fa-cogs mr-5"></i><b>Do you want to know which jobs are available and how many job seekers are looking for the same
-                                                            job as you?</b>&nbsp;&nbsp;Then enter your profession on the VDAB application "<a href="https://www.vdab.be/trendsdoc/beroepen/index.html" target="_blank" rel="">Jobs in
-                                                                numbers</a>".
-                                        </li>
-                                    </ul>
-                                    <div class=" d-flex justify-content-center">
-                                        <img class="text-center justify-content-center" src="./images/orientation-img/job-in-numbers.png" style="width: 90%;" alt=""></div>
+                            <span id="bottleneck"></span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="mb-3" id="roadmap">Bottleneck Jobs</h2>
+                            <hr>
+                            <p style="text-indent: 3em;">Knowing the bottleneck jobs at firsthand might be helpful for you to make your decisions and reach your goals.
+                                
+                                <br> A bottleneck job is a job for which filling vacancies is on average more difficult than for other jobs.&nbsp;People also speak of 'bottleneck vacancies';&nbsp;these are vacancies with a duration of more than 90 days.&nbsp;Those might be easier to attain for you.
+                                <br> You can find the list of bottleneck jobs at <a href="https://www.vdab.be/trends/vacatureanalyse.shtml"><u>VDAB</u></a> (Flanders) and <a href="http://www.actiris.be/marchemp/tabid/243/mctl/5/idtheme/3/language/nl-be/Thematisch-overzicht.aspx"><u>ACTIRIS</u></a> (Brussels). At education selector (<a href="https://www.onderwijskiezer.be/v2/beroepen/beroep_knelpuntberoepenlijst.php"><u>onderwijskiezer</u></a>) you can find also an overview of the bottleneck jobs of both.&nbsp;By clicking on a job you open an information sheet with information about that profession.
+                                <br>
+                                <br> Here on the left is a list of most wanted bottleneck jobs (2019) in different sectors for highly educated persons in Flanders.
+                                <a href="https://www.vdab.be/trends/vacatureanalyse.shtml" target="_blank" rel=""></a>
+                            </p>
+                            <div class=" d-flex justify-content-center">
+                                <a class="btn btn-info" href="https://www.vdab.be/trends/vacatureanalyse.shtml" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See most recent bottleneck jobs</a>
 
-                                    <div class="mt-4 d-flex justify-content-center">
-                                        <button class="btn btn-info" href="https://www.vdab.be/trends/vacatureanalyse.shtml" ><i class="fas fa-clone left"></i> Statistics</button>
-                                        <button class="btn btn-info" href="https://www.vdab.be/trends/vacatureanalyse.shtml"><i class="fas fa-clone left"></i> Jobs in Numbers</button>
+                            </div>
+                            <table class="table mt-5">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Sector</th>
+                                        <th scope="col">Most wanted bottleneck jobs for highly educated</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Administrative</th>
+                                        <td>
+                                            <ul>
+                                                <li>Insurance manager</li>
+                                                <li>Insurance advisor</li>
+                                                <li>Accountant</li>
+                                                <li>Financial Audit</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Construction
+                                        </th>
+                                        <td>
+                                            <ul>
+                                                <li>Conductor</li>
+                                                <li>Site manager</li>
+                                                <li>Calculator</li>
+                                                <li>Data communication network installator</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Communication Information</th>
+                                        <td>
+                                            <ul>
+                                                <li>Company Analyst ICT</li>
+                                                <li>Analyst developer ICT</li>
+                                                <li>Network manager</li>
+                                                <li>Research and development expert in industry</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Service provider</th>
+                                        <td>
+                                            <ul>
+                                                <li>Shop manager</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Ho-re-ca, commerce, sales</th>
+                                        <td>
+                                            <ul>
+                                                <li>Shop department responsible</li>
+                                                <li>Technical commercial advisor</li>
+                                                <li>Technical advisor client support</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Industry
+                                        </th>
+                                        <td>
+                                            <ul>
+                                                <li>Supervisor industrial production</li>
+                                                <li>Supervisor mechanical production</li>
+                                                <li>Draftsman-designer electronics</li>
+                                                <li>Industrial maintenance</li>
+                                                <li>Technician</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Medical, care</th>
+                                        <td>
+                                            <ul>
+                                                <li>Nurse</li>
+                                                <li>Doctor</li>
+                                                <li>Hospital pharmacy</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Pedagogical</th>
+                                        <td>
+                                            <ul>
+                                                <li>Teacher Secondary Education</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Transport, Logistics</th>
+                                        <td>
+                                            <ul>
+                                                <li>Logistics officer</li>
+                                                <li>Expeditor</li>
+                                                <li>Customs declarant</li>
+                                            </ul>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <span id="booming"></span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="mb-3" id="roadmap">Good to know: Vacancies booming!</h2>
+                            <hr>
+
+                            <!--Section: Content-->
+                            <section class="dark-grey-text">
+
+                                <div class="row pr-lg-5">
+                                    <div class="col-md-4 mb-4">
+
+                                        <div class="view">
+                                            <img src="./images/orientation-img/jobs-booming.jpg" class="img-fluid" alt="smaple image">
+                                        </div>
+
                                     </div>
+                                    <div class="col-md-8 d-flex align-items-center">
+                                        <div>
+                                            <p style="text-indent: 3em;" class="text-right">
+                                                While the number of jobs for low-skilled workers is going down in Belgium, <b>vacancies for high-skilled
+                                                            staff are booming.</b> Researchers say that Belgium will have 1.1 million new jobs for the high-skilled, because of the latest developments in technological areas (<a href="https://www.vrt.be/vrtnws/en/2017/08/16/high-skilled_foreignworkersinhighdemand-1-3048075/">VRT</a>). IT related and finance jobs are high demand jobs In Flanders.
+                                                <br> In June 2019, the unemployment rate in Belgium dropped to 5.6 percent, an almost percentage point below the EU average. Though more people are finding jobs in Belgium, employers continue to experience difficulty filling vacancies. Belgium has the <b>second-highest job vacancy rate</b> in the EU at 3.6 percent, and showed the largest year-over-year increase.</p>
 
-                                    <span id="bottleneck"></span>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2 class="mb-3" id="roadmap">Bottleneck Jobs</h2>
-                                    <hr>
-                                    <p style="text-indent: 3em;">Knowing the bottleneck jobs at firsthand might be helpful for you to make your decisions and reach your goals.
-                                        <br>
-                                        <br> A bottleneck job is a job for which filling vacancies is on average more difficult than for other jobs.&nbsp;People also speak of 'bottleneck vacancies';&nbsp;these are vacancies with a duration of more than 90 days.&nbsp;Those might be easier to attain for you.
-                                        <br>
-                                        <br> You can find the list of bottleneck jobs at <a href="https://www.vdab.be/trends/vacatureanalyse.shtml"><u>VDAB</u></a> (Flanders) and <a href="http://www.actiris.be/marchemp/tabid/243/mctl/5/idtheme/3/language/nl-be/Thematisch-overzicht.aspx"><u>ACTIRIS</u></a> (Brussels). At education selector (<a href="https://www.onderwijskiezer.be/v2/beroepen/beroep_knelpuntberoepenlijst.php"><u>onderwijskiezer</u></a>) you can find also an overview of the bottleneck jobs of both.&nbsp;By clicking on a job you open an information sheet with information about that profession.
-                                        <br>
-                                        <br> Here on the left is a list of most wanted bottleneck jobs (2019) in different sectors for highly educated persons in Flanders.
-                                        <a href="https://www.vdab.be/trends/vacatureanalyse.shtml" target="_blank" rel=""></a>
-                                    </p>
-                                    <div class=" d-flex justify-content-center">
-                                        <a class="btn btn-info btn-sm btn-rounded" href="https://www.vdab.be/trends/vacatureanalyse.shtml" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See most recent bottleneck jobs</a>
-
+                                        </div>
                                     </div>
-                                    <table class="table mt-5">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Sector</th>
-                                                <th scope="col">Most wanted bottleneck jobs for highly educated</th>
+                                </div>
 
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Administrative</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Insurance manager</li>
-                                                        <li>Insurance advisor</li>
-                                                        <li>Accountant</li>
-                                                        <li>Financial Audit</li>
-                                                    </ul>
-                                                </td>
+                            </section>
 
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Construction
-                                                </th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Conductor</li>
-                                                        <li>Site manager</li>
-                                                        <li>Calculator</li>
-                                                        <li>Data communication network installator</li>
-                                                    </ul>
-                                                </td>
+                            <span id="better"></span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="mb-3" id="roadmap">Know yourself better</h2>
+                            <hr>
 
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Communication Information</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Company Analyst ICT</li>
-                                                        <li>Analyst developer ICT</li>
-                                                        <li>Network manager</li>
-                                                        <li>Research and development expert in industry</li>
-                                                    </ul>
-                                                </td>
+                            <!--Section: Content-->
+                            <section class=" text-center text-lg-left dark-grey-text">
 
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Service provider</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Shop manager</li>
-                                                    </ul>
-                                                </td>
+                                <!--Grid row-->
+                                <div class="row">
 
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Ho-re-ca, commerce, sales</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Shop department responsible</li>
-                                                        <li>Technical commercial advisor</li>
-                                                        <li>Technical advisor client support</li>
-                                                    </ul>
-                                                </td>
+                                    <!--Grid column-->
+                                    <div class="col-md-8 mb-42 mb-md-0">
 
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Industry
-                                                </th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Supervisor industrial production</li>
-                                                        <li>Supervisor mechanical production</li>
-                                                        <li>Draftsman-designer electronics</li>
-                                                        <li>Industrial maintenance</li>
-                                                        <li>Technician</li>
-                                                    </ul>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Medical, care</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Nurse</li>
-                                                        <li>Doctor</li>
-                                                        <li>Hospital pharmacy</li>
-                                                    </ul>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Pedagogical</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Teacher Secondary Education</li>
-                                                    </ul>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Transport, Logistics</th>
-                                                <td>
-                                                    <ul>
-                                                        <li>Logistics officer</li>
-                                                        <li>Expeditor</li>
-                                                        <li>Customs declarant</li>
-                                                    </ul>
-                                                </td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-
-                                    <span id="booming"></span>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2 class="mb-3" id="roadmap">Good to know: Vacancies booming!</h2>
-                                    <hr>
-
-
-                                            <!--Section: Content-->
-                                            <section class="dark-grey-text">
-                                          
-                                              <div class="row pr-lg-5">
-                                                <div class="col-md-4 mb-4">
-                                          
-                                                  <div class="view">
-                                                    <img src="./images/orientation-img/jobs-booming.jpg" class="img-fluid" alt="smaple image">
-                                                  </div>
-                                          
-                                                </div>
-                                                <div class="col-md-8 d-flex align-items-center">
-                                                  <div>
-                                                        <p style="text-indent: 3em;" class="text-right">
-                                                        While the number of jobs for low-skilled workers is going down in Belgium, <b>vacancies for high-skilled
-                                                            staff are booming.</b> Researchers say that Belgium will have 1.1 million new jobs for the
-                                                        high-skilled, because of the latest developments in technological areas (<a href="https://www.vrt.be/vrtnws/en/2017/08/16/high-skilled_foreignworkersinhighdemand-1-3048075/">VRT</a>).
-                                                        IT related and finance jobs are high demand jobs In Flanders. <br>
-                                                        In June 2019, the unemployment rate in Belgium dropped to 5.6 percent, an almost percentage point below
-                                                        the EU average. Though more people are finding jobs in Belgium, employers continue to experience
-                                                        difficulty filling vacancies. Belgium has the <b>second-highest job vacancy rate</b> in the EU at 3.6
-                                                            percent, and showed the largest year-over-year increase.</p>
-                                          
-                                                  </div>
-                                                </div>
-                                              </div>
-                                          
-                                            </section>
-                                    
-                                    <span id="better"></span>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2 class="mb-3" id="roadmap">Know yourself better</h2>
-                                    <hr>
-                                    
- 
- 
-                                            <!--Section: Content-->
-                                            <section class=" text-center text-lg-left dark-grey-text">
-                                        
-                                              <!--Grid row-->
-                                              <div class="row">
-                                        
-                                                <!--Grid column-->
-                                                <div class="col-md-8 mb-42 mb-md-0">
-                                        
-                                                        <p style="text-indent: 3em;" class="mt-1">
-                                                
-                                                                It is important to <b>know who you are, what you can do</b>and<b>what you want.</b> If you want to build a sustainable career, it is important to consider the following aspects:
-                                                                <br><br><b>(1) Motivation:</b> What do I find important in a job? What do I need to feel job satisfaction in my job?
-                                                                <br>
-                                                                
-                                                                <b>(2) Qualities:</b> What are my qualifications, competences and skills? Map what you can and cannot do. Be sure to ask others how they see you.
-                                                                <br>
-                                                                
-                                        
-                                                </div>
-                                                <!--Grid column-->
-                                        
-                                                <!--Grid column-->
-                                                <div class="col-md-4 mb-2 mb-md-0">
-                                        
-                                                  <!--Image-->
-                                                  <div class=" z-depth-1-half">
-                                                    <img src="./images/orientation-img/know-yourself.png" class="img-fluid"
-                                                      alt="">
-                                                    <a href="#">
-                                                      <div class="mask rgba-white-light"></div>
-                                                    </a>
-                                                  </div>
-                                        
-                                                </div>
-                                                <!--Grid column-->
-                                        
-                                              </div>
-                                              <!--Grid row-->
-                                        
-                                        
-                                            </section>
-                                            <!--Section: Content-->
-                                        
-                                        
-                                          
-
-
-                                    
                                         <p style="text-indent: 3em;" class="mt-1">
-                                                
-                                            <br> On the VDAB website you will also find various <a href="https://www.vdab.be/tests">tests</a> that give you insight into <b>who you are, what your knowledge is</b> and <b>which jobs suit you best.</b> That way you get to know yourself better.
+
+                                            It is important to <b>know who you are, what you can do</b>and<b>what you want.</b> If you want to build a sustainable career, it is important to consider the following aspects:
                                             <br>
-                                            <br> If you want to know which profession suits you, then VDAB has a <a href="https://www.vdab.be/solliciteren/welke-job-past">few tips</a> for you, but you can also do a career orientation test. Please note, the results of this test can only be saved via your VDAB account. Don’t have a VDAB account yet? Then register <a href="https://www.vdab.be/solliciteren/welke-job-past">here</a>.
-                                                </p> 
-                                                  
-                                                <div class=" d-flex justify-content-center">
-                                                        <a class="btn btn-info" href="https://www.vlerick.com/~/media/research/researchInAction/Nimap/pdfnewcomers/Tool1Settingyournewjobgoalspdf.pdf" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See the tools at @level2work</a>  
-                
-                                                </div>
+                                            <br><b>(1) Motivation:</b> What do I find important in a job? What do I need to feel job satisfaction in my job?
+                                            <br>
 
-                                    <span id="strengths"></span>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2 class="mb-3" id="roadmap">Invest in your strengths</h2>
-                                    <hr>
-                                    <p style="text-indent: 3em;">
-                                            If you defined your <b>strengths</b>, you can go for investing in them. When it comes to your <b>weaknesses</b>, you may need to improve them. Language (Dutch) is certainly one of them, maybe the most important one. <br>
-                                
-                                            You can use NIMAP Career Focus Tool for making your decisions.
-                                            </p> 
-                                              
-                                            <div class=" d-flex justify-content-center">
-                                                    <a class="btn btn-info text-center" href="https://www.vlerick.com/~/media/research/researchInAction/Nimap/pdfnewcomers/Tool1Settingyournewjobgoalspdf.pdf" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See NIMAP Career Focus Tool Setting your new job goals</a>  
-            
-                                                </div>
-                                                <div class=" d-flex justify-content-center">
-                                                        <img src="./images/orientation-img/NIMAP.png" style="width: 100%;" alt="">
-                
-                                                    </div>
-                                    <span id="coaching"></span>      
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2 class="mb-3" id="roadmap">Get career coaching for your orientation</h2>
-                                    <hr>   
-                                    <div class=" d-flex justify-content-center">
-                                            <img src="./images/orientation-img/coaching.png" style="width: 70%;" alt="">
-    
-                                        </div> 
-                                    <ul class="nav nav-tabs text-center mt-4" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                                aria-selected="true">All-in-one 4 HER
-                                                Career Coaching</a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                                aria-selected="false">Career Coaching Cheques</a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                                                aria-selected="false">All-in-one 4 HER
-                                                Mentoring</a>
-                                            </li>
-                                          </ul>
-                                          
-                                          <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><p style="text-indent: 3em;" class="my-3 mx-3">It is best getting external help for your orientation.
-                                                    We provide 16 HERs with professional FREE <b>career coaching</b> by our professional coaches (<a href="https://www.myfutureworks.be/loopbaanbegeleiding-antwerpen" target="_blank" rel="">Antwerp</a>,<a href="https://www.myfutureworks.be/loopbaanbegeleiding-limburg" target="_blank" rel=""> Limburg</a>). Get more information here and register for being a
-                                                    candidate for All-in-one 4 HER career coaching program.
-                                                    </p>
-                                                    <div class=" d-flex justify-content-center">
-                                                            <a class="btn btn-info" href="https://all-in-one4her.eu" style="border-radius: 10px;"><i class="fas fa-clone left"></i> Register</a> </div>
-                    
-                                                        </div>
-                                               
-                                                    
+                                            <b>(2) Qualities:</b> What are my qualifications, competences and skills? Map what you can and cannot do. Be sure to ask others how they see you.
+                                            <br>
 
-                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><p style="text-indent: 3em;" class="my-3 mx-3">This program is also provided via <a href="https://www.vdab.be/loopbaancheques"> VDAB career coaching cheques</a> for only the residents who already have a job and want to change their career path. Every 6 years when you are in a job, you have a right of 8 hours career coaching with a discount.
-                                                    </p>
-                                                    <div class=" d-flex justify-content-center">
-                                                            <a class="btn btn-info" href="https://www.vdab.be/loopbaancheques" style="border-radius: 10px;"><i class="fas fa-clone left"></i>VDAB Career Coaching Cheques</a> </div>
-                                                            
-                                            </div>        
-                                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><p style="text-indent: 3em;" class="my-3 mx-3">You can also make use of our FREE mentoring programs for getting help for your orientation. See our mentoring page for more information.
-                                            </p>
-                                            <div class=" d-flex justify-content-center">
-                                                    <a class="btn btn-info" href="https://www.vdab.be/loopbaancheques" style="border-radius: 10px;"><i class="fas fa-clone left"></i>All-in-one4HER Mentoring</a> </div>
-                                            </div>
-                                          </div>       
-                                
+                                    </div>
+                                    <!--Grid column-->
 
-                                
+                                    <!--Grid column-->
+                                    <div class="col-md-4 mb-2 mb-md-0">
+
+                                        <!--Image-->
+                                        <div class=" z-depth-1-half">
+                                            <img src="./images/orientation-img/know-yourself.png" class="img-fluid" alt="">
+                                            <a href="#">
+                                                <div class="mask rgba-white-light"></div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                            </section>
+                            <!--Section: Content-->
+
+                            <p style="text-indent: 3em;" class="mt-1">
+
+                                <br> On the VDAB website you will also find various <a href="https://www.vdab.be/tests">tests</a> that give you insight into <b>who you are, what your knowledge is</b> and <b>which jobs suit you best.</b> That way you get to know yourself better.
+                                <br>
+                                <br> If you want to know which profession suits you, then VDAB has a <a href="https://www.vdab.be/solliciteren/welke-job-past">few tips</a> for you, but you can also do a career orientation test. Please note, the results of this test can only be saved via your VDAB account. Don’t have a VDAB account yet? Then register <a href="https://www.vdab.be/solliciteren/welke-job-past">here</a>.
+                            </p>
+
+                            <div class=" d-flex justify-content-center">
+                                <a class="btn btn-info" href="https://www.vlerick.com/~/media/research/researchInAction/Nimap/pdfnewcomers/Tool1Settingyournewjobgoalspdf.pdf" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See the tools at @level2work</a>
+
                             </div>
 
+                            <span id="strengths"></span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="mb-3" id="roadmap">Invest in your strengths</h2>
+                            <hr>
+                            <p style="text-indent: 3em;">
+                                If you defined your <b>strengths</b>, you can go for investing in them. When it comes to your <b>weaknesses</b>, you may need to improve them. Language (Dutch) is certainly one of them, maybe the most important one.
+                                <br> You can use NIMAP Career Focus Tool for making your decisions.
+                            </p>
+
+                            <div class=" d-flex justify-content-center">
+                                <a class="btn btn-info text-center" href="https://www.vlerick.com/~/media/research/researchInAction/Nimap/pdfnewcomers/Tool1Settingyournewjobgoalspdf.pdf" style="border-radius: 10px;"><i class="fas fa-clone left"></i> See NIMAP Career Focus Tool Setting your new job goals</a>
+
+                            </div>
+                            <div class=" d-flex justify-content-center">
+                                <img src="./images/orientation-img/NIMAP.png" style="width: 100%;" alt="">
+
+                            </div>
+                            <span id="coaching"></span>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2 class="mb-3" id="roadmap">Get career coaching for your orientation</h2>
+                            <hr>
+                            <div class=" d-flex justify-content-center">
+                                <img src="./images/orientation-img/coaching.png" style="width: 70%;" alt="">
+
+                            </div>
+                            <ul class="nav nav-tabs text-center mt-4" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All-in-one 4 HER
+                                                Career Coaching</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Career Coaching Cheques</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">All-in-one 4 HER
+                                                Mentoring</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <p style="text-indent: 3em;" class="my-3 mx-3">It is best getting external help for your orientation. We provide 16 HERs with professional FREE <b>career coaching</b> by our professional coaches (<a href="https://www.myfutureworks.be/loopbaanbegeleiding-antwerpen" target="_blank" rel="">Antwerp</a>,<a href="https://www.myfutureworks.be/loopbaanbegeleiding-limburg" target="_blank" rel=""> Limburg</a>). Get more information here and register for being a candidate for All-in-one 4 HER career coaching program.
+                                    </p>
+                                    <div class=" d-flex justify-content-center">
+                                        <a class="btn btn-info" href="https://all-in-one4her.eu" style="border-radius: 10px;"><i class="fas fa-clone left"></i> Register</a> </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p style="text-indent: 3em;" class="my-3 mx-3">This program is also provided via <a href="https://www.vdab.be/loopbaancheques"> VDAB career coaching cheques</a> for only the residents who already have a job and want to change their career path. Every 6 years when you are in a job, you have a right of 8 hours career coaching with a discount.
+                                    </p>
+                                    <div class=" d-flex justify-content-center">
+                                        <a class="btn btn-info" href="https://www.vdab.be/loopbaancheques" style="border-radius: 10px;"><i class="fas fa-clone left"></i>VDAB Career Coaching Cheques</a> </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p style="text-indent: 3em;" class="my-3 mx-3">You can also make use of our FREE mentoring programs for getting help for your orientation. See our mentoring page for more information.
+                                    </p>
+                                    <div class=" d-flex justify-content-center">
+                                        <a class="btn btn-info" href="https://www.vdab.be/loopbaancheques" style="border-radius: 10px;"><i class="fas fa-clone left"></i>All-in-one4HER Mentoring</a> </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                 </main>
-                </div>
+                <!-- right content ends-->
             </div>
+        </div>
     </main>
 
     <!-- Sign In Starts-->
