@@ -80,7 +80,7 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target="#sidemenu" data-offset="15">
+<body>
 
     <header id="header">
 
@@ -218,7 +218,7 @@
                         </ul>
                     </div>
                 </aside>
-                <main class="col py-5">
+                <main class="col py-5"  data-spy="scroll" data-target="#sidemenu" data-offset="15">
                     <div class="row">
                         <div class="col">
 
@@ -1064,7 +1064,7 @@
         <!-- Sign Up Ends-->
 
     <!-- FOOTER STARTS-->
-    <footer class="page-footer text-center font-small mt-1 wow fadeIn" style="z-index: 5;">
+    <footer class="page-footer text-center font-small mt-1 wow fadeIn" style="z-index: 5;" id="footerr" >
 
         <!-- LOGOS STARTS-->
         <div class="border-top border-info" style="background-color: white;">
@@ -1204,8 +1204,6 @@
     </footer>
     <!-- FOOTER ENDS-->
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
-    </script>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -1217,6 +1215,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Initializations -->
+    
     <script type="text/javascript">
         // Animations initialization
         new WOW().init();
@@ -1227,8 +1226,10 @@
         setTimeout(function() {
             $('#centralModalInfo').modal('show');
         }, 5000);
+
+
         var hh = $('#header').outerHeight();
-        var fh = $('footer').outerHeight();
+        var fh = $('#footerr').outerHeight();
 
         $('#sidemenu').affix({
             offset: {
@@ -1236,6 +1237,9 @@
                 bottom: fh + 200
             }
         });
+
+
+
     </script>
 
 </body>
