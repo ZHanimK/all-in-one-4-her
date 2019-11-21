@@ -653,7 +653,7 @@
         <!-- Sign Up Ends-->
 
     <!-- FOOTER STARTS-->
-    <footer class="page-footer text-center font-small mt-1 wow fadeIn">
+    <footer class="page-footer text-center font-small mt-1 wow fadeIn" id="footerr">
 
         <!-- LOGOS STARTS-->
         <div class="border-top border-info" style="background-color: white;">
@@ -815,7 +815,7 @@
             $('#centralModalInfo').modal('show');
         }, 5000);
         var hh = $('#header').outerHeight();
-        var fh = $('footer').outerHeight();
+        var fh = $('#footerr').outerHeight();
 
         $('#sidemenu').affix({
             offset: {
