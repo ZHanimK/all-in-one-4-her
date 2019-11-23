@@ -1,7 +1,7 @@
 <p align="center">
-  <img height="200" src="images/logos/logo.png">
+  <img height="200" src="images/logos/logo.png"/>
 </p>
-## [All-in-one 4 HER](https://all-in-one4her.eu/)
+# [All-in-one 4 HER](https://all-in-one4her.eu/)
 <img src="images/site-view.png" alt="" />
 
 ## Technologies
