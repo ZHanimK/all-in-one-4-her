@@ -1,5 +1,6 @@
-<img src="images/logos/logo.png" style="float: right; width: 50%" />
-
+<p align="center">
+  <img height="200" src="images/logos/logo.png">
+</p>
 # [All-in-one 4 HER](https://all-in-one4her.eu/)
 <img src="images/site-view.png" alt="" />
 
