@@ -1,4 +1,4 @@
-<img src="images/logos/logo.png" style="text-align:center;" />
+<img src="images/logos/logo.png" style="float: right; width: 50%" />
 
 # [All-in-one 4 HER](https://all-in-one4her.eu/)
 <img src="images/site-view.png" alt="" />
