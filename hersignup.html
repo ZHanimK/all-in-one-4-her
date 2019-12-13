@@ -1,4 +1,134 @@
+<?php
+  
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+        include "connection_her.php";
 
+        $insert = $db -> prepare("INSERT INTO her(`firstname`, `lastname`, `age`, `gender`, `country`, `legalStatus`, `education`, `title`, `degreeCountry`, `experience`, `email`, `all_password`, `who`) " . "VALUES(:firstname,:lastname,:age,:gender,:country,:legalStatus,:education,:title,:degreeCountry,:experience,:email,:all_password,1)");
+    
+        if ($_POST['all_password'] === $_POST['confirmpassword'] ) {
+    
+            $insert->bindValue(':firstname', $_POST['firstname']);
+            $insert->bindValue(':lastname', $_POST['lastname']);
+            $insert->bindValue(':age', $_POST['age']);
+            $insert->bindValue(':gender', $_POST['gender']);
+            $insert->bindValue(':country', $_POST['country']);
+            $insert->bindValue(':legalStatus', $_POST['legalStatus']);
+            $insert->bindValue(':education', $_POST['education']);
+            $insert->bindValue(':title', $_POST['title']);
+            $insert->bindValue(':degreeCountry', $_POST['degreeCountry']);
+            $insert->bindValue(':experience', $_POST['experience']);
+            $insert->bindValue(':email', $_POST['email']);
+            $insert->bindValue(':all_password', $_POST['all_password']);
+
+        if ($insert->execute()) {
+
+            $email = $_POST['email'];
+            $lastname = $_POST['lastname'];
+            $Lastname = ucfirst($lastname);
+            $all_password = $_POST['all_password'];
+
+            ini_set( 'display_errors', 1 );
+            error_reporting( E_ALL );
+        
+            $to = "$email";
+            $subject = "Registration completed to All-in-one4HER platform & project";
+            $message = "
+            Dear Mr/Ms " . $Lastname . ",
+
+            Thank you for registering to All-in-one4HER project and platform. Your password is: " . $all_password . ".
+            
+            We are only at the beginning phase of our project and just started to develop our platform aiming to facilitate your integration to the labour market in Flanders, Belgium. The other pages in our online platform will be activated later.
+            
+            You will receive automatic updates about our platform and be informed about our project activities, opportunities (career coaching, mentoring, etc.) by e-mail. You can also follow us on social media to get timely updates.
+            
+            If you have any questions, please don’t hesitate to contact us either by replying to this e-mail or by phone.
+            
+            Kind regards,
+            
+            All-in-one4HER Team 
+            
+        __________________________________________
+
+            Geachte heer / mevrouw " . $Lastname . ",
+            
+            Bedankt voor uw aanmelding voor het All-in-one4HER-project en -platform. Je wachtwoord is: " . $all_password . ".
+
+            We zijn nog maar in de beginfase van ons project en zijn net begonnen ons platform te ontwikkelen om uw integratie op de arbeidsmarkt in Vlaanderen, België, te vergemakkelijken. De andere pagina's op ons online platform worden later geactiveerd.
+            
+            U zal automatische updates over ons platform ontvangen en per e-mail op de hoogte gehouden worden van onze projectactiviteiten en kansen (loopbaancoaching, mentoring, enz.). U kunt ons ook volgen op sociale media om tijdig updates te ontvangen.
+            
+            Als u vragen heeft, aarzel niet a.u.b. om ons te contacteren door e-mail/telefoon.
+            
+            Met vriendelijke groeten,
+            
+            All-in-one4HER Team
+            
+            @: info@all-in-one4her.eu
+            www.all-in-one4her.eu
+            Phone: +32 (0) 2 801 13 58
+            Address: Beyond the Horizon ISSG 
+            Da Vincilaan 1, 1932 Zaventem Belgium
+            https://www.linkedin.com/groups/8765305/ 
+            https://www.facebook.com/Allinone4HER/ 
+            ";
+            $headers = "From: All-in-one4HER <info@all-in-one4her.eu>" . "\r\n";
+        
+            header("location:welcome.php");
+            mail($to,$subject,$message,$headers);
+
+            $firstname = $_POST['firstname'];
+            $lastname = $_POST['lastname'];
+            $age = $_POST['age'];
+            $gender = $_POST['gender'];
+            $legalStatus = $_POST['legalStatus'];
+            $country = $_POST['country'];
+            $education = $_POST['education'];
+            $title = $_POST['title'];
+            $degreeCountry = $_POST['degreeCountry'];
+            $experience = $_POST['experience'];
+            $email = $_POST['email'];
+
+            $to_2 = "info@all-in-one4her.eu";
+            $from_2 = "All-in-one4HER <info@all-in-one4her.eu>";
+            $subject_2 = "A new HER is registered";
+            $message_2 = " 
+            
+            first name: " . $firstname . "
+
+            last name: " . $lastname . "
+
+            age: " . $age . "
+
+            gender: " . $gender . "
+
+            legal status: " . $legalStatus . "
+
+            country of origin: " . $country . "
+
+            level of education: " . $education . "
+
+            field of study: " . $title . "
+
+            Country of highest degree: " . $degreeCountry . "
+
+            working experience: " . $experience . "
+
+            email: " . $email . "
+
+            ";
+            $headers_2 = 'From: ' . $from_2 . "\r\n";
+            mail($to_2, $subject_2, $message_2, $headers_2);
+        }
+        else {
+            echo "<p align='left'><font color=red  size='4pt'>*This Email is already in use!</font></p>";
+            #print_r($insert->errorInfo());
+        }
+    }else {
+        echo "<p align='left'><font color=red  size='4pt'>*Passwords do not match!</font></p>";
+    }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -217,7 +347,7 @@
                         <div class="media">
 
                             <div class="media-body">
-                                <h2 class="h2-responsive"><strong>Sign-up as a HERs</strong></h2>
+                                <h2 class="h2-responsive"><strong>Sign-up as a HER</strong></h2>
                             </div>
                             <img class="d-flex mr-3" src="./images/icons/HER.png" alt="Her Icon">
                         </div>
@@ -1057,7 +1187,7 @@
                             </div>
 
                             <div class="text-xs-left">
-                                <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+                                <input class="btn btn-warning" type="submit" name="submit" value="Submit">
 
                             </div>
                         </form>
