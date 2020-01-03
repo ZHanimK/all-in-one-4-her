@@ -26,6 +26,9 @@
             header {
                 height: 90%;
             }
+            .nav {
+                display: block;
+            }
         }
         
         #navbar1 {
@@ -60,6 +63,8 @@
                 position: fixed;
                 top: 40px;
             }
+
+
         }
         
         #sidemenu .nav-link.active,
@@ -201,17 +206,17 @@
                     
                     <div class="mt-5 mb-3" id="sidemenu" style="font-size: 15px;">
                         <ul class="nav flex-md-column flex-row justify-content-between" style="padding-bottom: 5px;">
-                            <li class="nav-item"><a href="#market" class="nav-link active">Info on the Flemish Labour<br> Market</a></li>
+                            <li class="nav-item yan"><a href="#market" class="nav-link active">Info on the Flemish Labour<br> Market</a></li>
                             <ul class="nav flex-md-column ml-2 hidden-sm-down">
-                                <li class="nav-item"><a href="#bottleneck" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Bottleneck Jobs</a></li>
-                                <li class="nav-item"><a href="#booming" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Vacancies Booming</a></li>
+                                <li class="nav-item yan"><a href="#bottleneck" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Bottleneck Jobs</a></li>
+                                <li class="nav-item yan"><a href="#booming" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Vacancies Booming</a></li>
 
                             </ul>
-                            <li class="nav-item"><a href="#better" class="nav-link">Know Yourself Better</a></li>
+                            <li class="nav-item yan"><a href="#better" class="nav-link">Know Yourself Better</a></li>
                             <ul class="nav flex-md-column ml-2 hidden-sm-down">
-                                <li class="nav-item"><a href="#strengths" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Invest in your strengths</a></li>
+                                <li class="nav-item yan"><a href="#strengths" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Invest in your strengths</a></li>
                             </ul>
-                            <li class="nav-item"><a href="#coaching" class="nav-link">Get career coaching for your <br>orientation</a></li>
+                            <li class="nav-item yan"><a href="#coaching" class="nav-link">Get career coaching for your <br>orientation</a></li>
 
                         </ul>
                     </div>
@@ -815,13 +820,13 @@
         setTimeout(function() {
             $('#centralModalInfo').modal('show');
         }, 5000);
-        var hh = $('#header').outerHeight();
-        var fh = $('#footerr').outerHeight();
+        //var hh = $('#header').outerHeight();
+        //var fh = $('#footerr').outerHeight();
 
         $('#sidemenu').affix({
             offset: {
-                top: hh,
-                bottom: fh + 200
+                top: 750,
+                bottom: 400 + 200
             }
         });
     </script>

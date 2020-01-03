@@ -26,6 +26,15 @@
             header {
                 height: 90%;
             }
+            .nav {
+                display: block;
+            }
+            .esf{
+                width: 30%;
+            }
+            #yazi{
+                font-size:50px ;
+            }
         }
         
         #navbar1 {
@@ -140,7 +149,7 @@
 
                     </ul>
                     <div class="ml-2" style="margin-right: -100px;">
-                        <a class="ml-auto" href="https://all-in-one4her.eu/"><img src="./images/en.png"></a>
+                        
                         <a href="./under_construction.html"><img src="./images/nd.png"></a>
                     </div>
                 </div>
@@ -157,8 +166,8 @@
                 <!--Grid row-->
 
                 <div class="d-flex justify-content-between">
-                    <img class="align-bottom" src="images/logo-esf.png">
-                    <h3 class="display-3 font-weight-bold white-text pr-5">Work</h3>
+                    <img class="align-bottom esf"  src="images/logo-esf.png">
+                    <h3 class="display-3 font-weight-bold white-text pr-5" id="yazi">Work</h3>
                 </div>
 
                 <!--Grid row-->
@@ -186,13 +195,13 @@
                             <li class="nav-item"><a href="#roadmap" class="nav-link active">Roadmap to a job</a></li>
                             <ul class="nav flex-md-column ml-2 hidden-sm-down">
                                 <li class="nav-item"><a href="./orientation.html" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Orientation</a></li>
-                                <li class="nav-item"><a href="#sec3b" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Checklist for work</a></li>
-                                <li class="nav-item"><a href="#sec3a" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Trainings</a></li>
-                                <li class="nav-item"><a href="#sec3b" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Job search</a></li>
-                                <li class="nav-item"><a href="#sec3a" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> CV & Motivation letter</a></li>
-                                <li class="nav-item"><a href="#sec3b" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Networking & social media</a></li>
-                                <li class="nav-item"><a href="#sec3a" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Job interviews</a></li>
-                                <li class="nav-item"><a href="#sec3b" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Workplace integration</a></li>
+                                <li class="nav-item"><a href="./checklist_for_working.html" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Checklist for work</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Trainings</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Job search</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> CV & Motivation letter</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Networking & social media</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Job interviews</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link ml-2" style="padding-bottom: 1px; padding-top: 1px;"><i class="fas fa-angle-right text-info"></i> Workplace integration</a></li>
                             </ul>
                             <li class="nav-item"><a href="#sectors" class="nav-link">Sectors</a></li>
                             <ul class="nav flex-md-column ml-2 hidden-sm-down">
@@ -299,6 +308,7 @@
                                                         text-align: left;
                                                         padding-left: 2.5rem;
                                                         padding-right: 0;
+                                                        padding-bottom: 10px;
                                                     }
                                                 }
                                                 
@@ -322,6 +332,12 @@
                                                         padding-left: 2.5rem;
                                                         padding-right: 0;
                                                     }
+                                                    .logom{ 
+
+                                                        padding-bottom: 5px;
+                                                        padding-top:5px ;
+                                                        margin-left: 70px;
+                                                    }
                                                 }
                                                 
                                                 @media (max-width: 767.98px) {
@@ -344,13 +360,13 @@
                                                         <li class="timeline-element" onclick="location.href='orientation.html';" style="cursor: pointer;">
                                                             <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">1. Orientation</h5>
                                                             <div class="row mb-1">
-                                                            <div class="col-md-4  my-auto px-lg-0">
+                                                            <div class="col-md-4  my-auto px-lg-0 text-left">
                                                                 
-                                                                <img src="./images/work-img/orientation.png" >
+                                                                <img src="./images/work-img/orientation.png" class="logom" >
                                                                 
                                                             </div>
-                                                            <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
-                                                                    <ul class="text-right px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
+                                                            <div class="col-md-8 mb-2 px-lg-0 my-auto">
+                                                                    <ul class="px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
                                                                             <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Get info about Flemish job market
                                                                             </li>
                                                                             <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Bottleneck jobs in Flanders
@@ -369,27 +385,27 @@
                                                             
                                                         </li>
 
-                                                        <li class="timeline-element" onclick="location.href='under_construction.html';" style="cursor: pointer;">
+                                                        <li class="timeline-element" onclick="location.href='checklist_for_working.html';" style="cursor: pointer;">
                                                                 <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">2. Checklist for Work</h5>
                                                                 <div class="row mb-1">
 
                                                                 <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
                                                                         <ul class="text-left px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
-                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Documents to start working
+                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Residence and Access to the Labor Market
                                                                                 </li>
-                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Diploma recognition
+                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Recognition of Your Diploma
                                                                                 </li>
-                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Analyse your strengths and weaknesses and inner compass
+                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Professional Card
                                                                                 </li>
-                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Learn Dutch
+                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Good Knowledge of Dutch
                                                                                 </li>
-                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Basic competencies you need
+                                                                                <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Enough IT Knowledge
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
                                                                             <div class="col-md-4 my-auto px-lg-0">
                                                                     
-                                                                                    <img src="./images/work-img/checklist.png" >
+                                                                                    <img src="./images/work-img/checklist.png" class="logom" >
                                                                                     
                                                                                 </div>
                                                                 
@@ -400,13 +416,13 @@
                                                         <li class="timeline-element" onclick="location.href='under_construction.html';" style="cursor: pointer;">
                                                                 <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">3. Trainings</h5>
                                                                 <div class="row mb-1">
-                                                                <div class="col-md-4  my-auto px-lg-0">
+                                                                <div class="col-md-4  my-auto px-lg-0 text-left">
                                                                     
-                                                                    <img src="./images/work-img/training.png" >
+                                                                    <img src="./images/work-img/training.png" class="logom">
                                                                     
                                                                 </div>
-                                                                <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
-                                                                        <ul class="text-right px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
+                                                                <div class="col-md-8 mb-2 px-lg-0 my-auto">
+                                                                        <ul class="px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Available trainings to complete your competencies
                                                                                 </li>
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Where to find
@@ -436,7 +452,7 @@
                                                                         </div>
                                                                             <div class="col-md-4 my-auto px-lg-0">
                                                                     
-                                                                                    <img src="./images/work-img/social-network.png" >
+                                                                                    <img src="./images/work-img/social-network.png" class="logom" >
                                                                                     
                                                                                 </div>
                                                                 
@@ -446,13 +462,13 @@
                                                         <li class="timeline-element" onclick="location.href='under_construction.html';" style="cursor: pointer;">
                                                                 <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">5. CV & Motivation Letter</h5>
                                                                 <div class="row mb-1">
-                                                                <div class="col-md-4  my-auto px-lg-0">
+                                                                <div class="col-md-4 my-auto px-lg-0 text-left">
                                                                     
-                                                                    <img src="./images/work-img/cv.png" >
+                                                                    <img src="./images/work-img/cv.png" class="logom">
                                                                     
                                                                 </div>
-                                                                <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
-                                                                        <ul class="text-right px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
+                                                                <div class="col-md-8 mb-2 px-lg-0 my-auto">
+                                                                        <ul class="px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> How to prepare your CV
                                                                                 </li>
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> How to prepare your motivation letter
@@ -483,7 +499,7 @@
                                                                         </div>
                                                                             <div class="col-md-4 my-auto px-lg-0">
                                                                     
-                                                                                    <img src="./images/work-img/job-search.png" >
+                                                                                    <img src="./images/work-img/job-search.png" class="logom">
                                                                                     
                                                                                 </div>
                                                                 
@@ -492,13 +508,13 @@
                                                         <li class="timeline-element" onclick="location.href='under_construction.html';" style="cursor: pointer;">
                                                                 <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">7. Job Interviews</h5>
                                                                 <div class="row mb-1">
-                                                                <div class="col-md-4  my-auto px-lg-0">
+                                                                <div class="col-md-4  my-auto px-lg-0 text-left">
                                                                     
-                                                                    <img src="./images/work-img/interview.png" >
+                                                                    <img src="./images/work-img/interview.png" class="logom">
                                                                     
                                                                 </div>
-                                                                <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
-                                                                        <ul class="text-right px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
+                                                                <div class="col-md-8 mb-2 px-lg-0 my-auto">
+                                                                        <ul class="px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Interview process in Flanders
                                                                                 </li>
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Interview guidelines
@@ -522,13 +538,13 @@
                                                         <li class="timeline-element" onclick="location.href='under_construction.html';" style="cursor: pointer;">
                                                                 <h5 class="font-weight-bold dark-grey-text mb-1 px-lg-0">9. Workplace Integration</h5>
                                                                 <div class="row mb-1">
-                                                                <div class="col-md-4  my-auto px-lg-0">
+                                                                <div class="col-md-4 text-left my-auto px-lg-0">
                                                                     
-                                                                    <img src="./images/work-img/integration.png" >
+                                                                    <img src="./images/work-img/integration.png" class="logom" >
                                                                     
                                                                 </div>
-                                                                <div class="col-md-8 mb-2 text-right px-lg-0 my-auto">
-                                                                        <ul class="text-right px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
+                                                                <div class="col-md-8 mb-2 px-lg-0 my-auto">
+                                                                        <ul class="px-lg-0" style="list-style: none; text-align: left; font-size: 14px;">
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> Language support
                                                                                 </li>
                                                                                 <li><i class="fas fa-check blue-text" aria-hidden="true"></i> coaching on the workplace
@@ -1290,13 +1306,13 @@
         }, 5000);
 
 
-        var hh = $('#header').outerHeight();
-        var fh = $('#footerr').outerHeight();
+        //var hh = $('#header').outerHeight();
+        //var fh = $('#footerr').outerHeight();
 
         $('#sidemenu').affix({
             offset: {
-                top: hh,
-                bottom: fh + 200
+                top: 750,
+                bottom: 400 + 200
             }
         });
 
