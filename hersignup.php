@@ -371,17 +371,78 @@
                                         <label for="lastname">Last Name</label>
                                     </div>
                                 </div>
+                                <div class="col">
+                                    <select class="browser-default custom-select" id="status" name="status" required>
+                                        <option name="" value="" selected disabled="disabled">Status</option>
+                                        <option value="fulltime">Working (Fulltime)</option>
+                                        <option value="parttime">Working (Parttime)</option>
+                                        <option value="unemployed">Unemployed</option>
+                                        <option value="selfemployed">Selfemployed</option>
+                                    </select>
+                                </div>
 
                             </div>
 
-                            <div class="form-row mb-1">
+                            <div class="form-row mb-4">
 
                                 <div class="col">
                                     <!-- age -->
-                                    <div class="md-form md-outline">
-                                        <input type="text" id="age" class="form-control" name="age" min="20" max="80" required>
-                                        <label for="age">Age</label>
-                                    </div>
+                                    <select class="browser-default custom-select" id="birth" name="birth" required>
+                                        <option name="" value="" selected disabled="disabled">Year of birth</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                    </select>
                                 </div>
                                 <div class="col">
                                     <select class="browser-default custom-select" id="gender" name="gender" required>
@@ -639,7 +700,7 @@
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <select class="browser-default custom-select" id="status" name="legalStatus" required>
+                                    <select class="browser-default custom-select" id="legalStatus" name="legalStatus" required>
                                         <option name="" value="" selected disabled="disabled">Legal Status</option>
                                         <option value="recognized-refugee">Recognised refugee</option>
                                         <option value="subsidary-protection">Subsidiary protection</option>
@@ -649,257 +710,7 @@
                                 </div>
 
                             </div>
-                            <div class="form-row mb-1">
-                                <div class="col">
-                                    <select class="browser-default custom-select" id="education" name="education" required>
-                                        <option name="" value="" selected disabled="disabled">Level of study</option>
-                                        <option value="Bachelor">Bachelor</option>
-                                        <option value="Master">Master</option>
-                                        <option value="PhD">PhD</option>
-                                    </select>
-                                </div>
-
-                                <div class="col">
-                                    <select class="browser-default custom-select" id="title" name="title" required>
-                                        <option name="" value="" selected disabled="disabled">Field of study</option>
-                                        <option value="Adult Education">Adult Education</option>
-                                        <option value="African Languages and Cultures">African Languages and Cultures</option>
-                                        <option value="Agro- and Biotechnology">Agro- and Biotechnology </option>
-                                        <option value="Arabic and Islamic Studies">Arabic and Islamic Studies</option>
-                                        <option value="Archaeology">Archaeology </option>
-                                        <option value="Architectural Engineering">Architectural Engineering</option>
-                                        <option value="Architecture ">Architecture </option>
-                                        <option value="Art History">Art History</option>
-                                        <option value="Art History, Musicology and Theatre Studies">Art History, Musicology and Theatre Studies</option>
-                                        <option value="Art Studies and Archaeology">Art Studies and Archaeology</option>
-                                        <option value="Audiovisual Arts">Audiovisual Arts</option>
-                                        <option value="Audiovisual Techniques: Film, Television and Video">Audiovisual Techniques: Film, Television and Video</option>
-                                        <option value="Audiovisual Techniques: Photography">Audiovisual Techniques: Photography </option>
-                                        <option value="Autism Spectrum Disorders: an Orthopedagogical Perspective">Autism Spectrum Disorders: an Orthopedagogical Perspective</option>
-                                        <option value="Automotive Technology ">Automotive Technology </option>
-                                        <option value="Aviation Technology">Aviation Technology</option>
-                                        <option value="Bio-engineering Sciences">Bio-engineering Sciences</option>
-                                        <option value="Bio-pharmaceutical Sciences">Bio-pharmaceutical Sciences</option>
-                                        <option value="Biochemical Engineering Technology">Biochemical Engineering Technology</option>
-                                        <option value="Biochemistry and Biotechnology">Biochemistry and Biotechnology </option>
-                                        <option value="Bioengineering Technology">Bioengineering Technology</option>
-                                        <option value="Bioindustrial Sciences">Bioindustrial Sciences</option>
-                                        <option value="Bioinformatics">Bioinformatics </option>
-                                        <option value="Biology">Biology </option>
-                                        <option value="Biomedical Laboratory Technology">Biomedical Laboratory Technology</option>
-                                        <option value="Biomedical Sciences">Biomedical Sciences</option>
-                                        <option value="Bioscience Engineering">Bioscience Engineering</option>
-                                        <option value="Bioscience Engineering Technology">Bioscience Engineering Technology</option>
-                                        <option value="Biotechnology">Biotechnology</option>
-                                        <option value="Business Administration">Business Administration</option>
-                                        <option value="Business and Information Systems Engineering">Business and Information Systems Engineering </option>
-                                        <option value="Business Economics">Business Economics</option>
-                                        <option value="Business Engineering">Business Engineering </option>
-                                        <option value="Business Law">Business Law</option>
-                                        <option value="Business Management">Business Management </option>
-                                        <option value="Care Management">Care Management </option>
-                                        <option value="Care Technology">Care Technology</option>
-                                        <option value="Chemical Engineering and Materials Science">Chemical Engineering and Materials Science</option>
-                                        <option value="Chemical Engineering Technology">Chemical Engineering Technology </option>
-                                        <option value="Chemistry">Chemistry</option>
-                                        <option value="Child and Youth Studies">Child and Youth Studies</option>
-                                        <option value="Civil Engineering">Civil Engineering</option>
-                                        <option value="Civil Engineering Technology">Civil Engineering Technology</option>
-                                        <option value="Communication Management">Communication Management </option>
-                                        <option value="Communication Science">Communication Science </option>
-                                        <option value="Communication Studies">Communication Studies </option>
-                                        <option value="Computer Science ">Computer Science </option>
-                                        <option value="Computer Science Engineering">Computer Science Engineering</option>
-                                        <option value="Computer networks and Distributed Systems">Computer networks and Distributed Systems</option>
-                                        <option value="Conservation-Restoration">Conservation-Restoration</option>
-                                        <option value="Construction">Construction </option>
-                                        <option value="Creative Therapy">Creative Therapy </option>
-                                        <option value="Criminology">Criminology </option>
-                                        <option value="Cultural Heritage and Records Management">Cultural Heritage and Records Management</option>
-                                        <option value="Dance">Dance</option>
-                                        <option value="Data Science">Data Science</option>
-                                        <option value="Dental Hygiene">Dental Hygiene </option>
-                                        <option value="Dentistry">Dentistry </option>
-                                        <option value="Design and Production Technology">Design and Production Technology </option>
-                                        <option value="Digital Arts and Entertainment">Digital Arts and Entertainment </option>
-                                        <option value="Digital Design & Development">Digital Design & Development</option>
-                                        <option value="Drama">Drama </option>
-                                        <option value="Early Childhood Education">Early Childhood Education</option>
-                                        <option value="East European Languages and Cultures">East European Languages and Cultures</option>
-                                        <option value="Economic Policy">Economic Policy</option>
-                                        <option value="Economic Sciences/Business Economics/Business Engineering">Economic Sciences/Business Economics/Business Engineering</option>
-                                        <option value="Economics">Economics </option>
-                                        <option value="Economics and Business Economics">Economics and Business Economics</option>
-                                        <option value="Ecotechnology">Ecotechnology</option>
-                                        <option value="Educational Sciences">Educational Sciences </option>
-                                        <option value="Electrical Engineering">Electrical Engineering</option>
-                                        <option value="Electromechanical Engineering">Electromechanical Engineering</option>
-                                        <option value="Electromechanical Engineering Technology">Electromechanical Engineering Technology</option>
-                                        <option value="Electromechanics">Electromechanics </option>
-                                        <option value="Electronics and ICT Engineering Technology">Electronics and ICT Engineering Technology</option>
-                                        <option value="Electronics-ICT">Electronics-ICT </option>
-                                        <option value="Energy Management">Energy Management </option>
-                                        <option value="Energy Technology">Energy Technology </option>
-                                        <option value="Engineering">Engineering </option>
-                                        <option value="Engineering Physics">Engineering Physics</option>
-                                        <option value="Engineering Technology">Engineering Technology </option>
-                                        <option value="Engineering: Architecture">Engineering: Architecture </option>
-                                        <option value="Environment, Health and Safety Management">Environment, Health and Safety Management</option>
-                                        <option value="Environmental Care">Environmental Care</option>
-                                        <option value="Environmental Engineering Technology">Environmental Engineering Technology</option>
-                                        <option value="Epidemiology">Epidemiology</option>
-                                        <option value="Facility Management">Facility Management</option>
-                                        <option value="Family studies">Family studies</option>
-                                        <option value="Fashion Technology">Fashion Technology</option>
-                                        <option value="Film Studies">Film Studies</option>
-                                        <option value="Finance">Finance</option>
-                                        <option value="Financial and Applied Mathematics">Financial and Applied Mathematics</option>
-                                        <option value="Geography">Geography </option>
-                                        <option value="Geography and Geomatics">Geography and Geomatics</option>
-                                        <option value="Geology">Geology </option>
-                                        <option value="Geriatric Nursing ">Geriatric Nursing </option>
-                                        <option value="Global Supply Chain Management">Global Supply Chain Management</option>
-                                        <option value="Graphical and Digital Media">Graphical and Digital Media </option>
-                                        <option value="Health Sciences">Health Sciences</option>
-                                        <option value="History">History</option>
-                                        <option value="Hotel Management">Hotel Management </option>
-                                        <option value="Idea and Innovation Management">Idea and Innovation Management</option>
-                                        <option value="Industrial Design Engineering Technology">Industrial Design Engineering Technology</option>
-                                        <option value="Industrial Product Design">Industrial Product Design</option>
-                                        <option value="Informatics">Informatics </option>
-                                        <option value="Information Technology ">Information Technology </option>
-                                        <option value="Instructional Sciences">Instructional Sciences</option>
-                                        <option value="Integral Safety">Integral Safety</option>
-                                        <option value="Intensive and Emergency Care">Intensive and Emergency Care </option>
-                                        <option value="Interdisciplinary Elderly Care">Interdisciplinary Elderly Care</option>
-                                        <option value="Interior Architecture">Interior Architecture </option>
-                                        <option value="Interior Design">Interior Design </option>
-                                        <option value="International Business Management">International Business Management</option>
-                                        <option value="International Communication and Media">International Communication and Media</option>
-                                        <option value="International Cooperation for North-South Relations">International Cooperation for North-South Relations </option>
-                                        <option value="International Journalism">International Journalism</option>
-                                        <option value="International Office Management">International Office Management</option>
-                                        <option value="International Relations">International Relations</option>
-                                        <option value="International Relations and Diplomacy">International Relations and Diplomacy</option>
-                                        <option value="IT Management and Multimedia">IT Management and Multimedia </option>
-                                        <option value="Japanology">Japanology</option>
-                                        <option value="Journalism">Journalism </option>
-                                        <option value="Laboratory Medicine">Laboratory Medicine</option>
-                                        <option value="Landscape and Garden Architecture">Landscape and Garden Architecture </option>
-                                        <option value="Language and Area Studies: Arabic and Islamic Studies">Language and Area Studies: Arabic and Islamic Studies</option>
-                                        <option value="Language and Area Studies: Japanology">Language and Area Studies: Japanology</option>
-                                        <option value="Language and Area Studies: Sinology">Language and Area Studies: Sinology</option>
-                                        <option value="Language and Area Studies: Slavic and East European Studies">Language and Area Studies: Slavic and East European Studies</option>
-                                        <option value="Language Studies">Language Studies</option>
-                                        <option value="Law">Law</option>
-                                        <option value="Linguistics">Linguistics</option>
-                                        <option value="Linguistics and Literary Studies">Linguistics and Literary Studies</option>
-                                        <option value="Linguistics and Literature">Linguistics and Literature </option>
-                                        <option value="Literary Studies">Literary Studies</option>
-                                        <option value="Logistics">Logistics</option>
-                                        <option value="Management Information Systems">Management Information Systems</option>
-                                        <option value="Marine Engineering">Marine Engineering </option>
-                                        <option value="Maritime and Air Transport Management">Maritime and Air Transport Management</option>
-                                        <option value="Maritime and Logistics Management">Maritime and Logistics Management</option>
-                                        <option value="Marketing">Marketing</option>
-                                        <option value="Mathematics">Mathematics </option>
-                                        <option value="Media and Entertainment Business">Media and Entertainment Business </option>
-                                        <option value="Medical Imaging">Medical Imaging</option>
-                                        <option value="Medicine">Medicine </option>
-                                        <option value="Mental Health Care">Mental Health Care </option>
-                                        <option value="Midwifery">Midwifery </option>
-                                        <option value="Molecular Biology">Molecular Biology</option>
-                                        <option value="Moral Sciences">Moral Sciences</option>
-                                        <option value="Multilingual Education">Multilingual Education</option>
-                                        <option value="Multimedia and Communication Technology">Multimedia and Communication Technology </option>
-                                        <option value="Music">Music </option>
-                                        <option value="Music and Performing Arts">Music and Performing Arts</option>
-                                        <option value="Musical">Musical</option>
-                                        <option value="Musicology">Musicology</option>
-                                        <option value="Nautical Sciences">Nautical Sciences </option>
-                                        <option value="Network Economy">Network Economy </option>
-                                        <option value="Nursing">Nursing </option>
-                                        <option value="Nursing and Midwifery">Nursing and Midwifery</option>
-                                        <option value="Nutrition and Dietetics">Nutrition and Dietetics </option>
-                                        <option value="Occupational Therapy">Occupational Therapy </option>
-                                        <option value="Office Management">Office Management </option>
-                                        <option value="Operating Room Nursing">Operating Room Nursing </option>
-                                        <option value="Optics and Optometry">Optics and Optometry</option>
-                                        <option value="Organisation and Management">Organisation and Management</option>
-                                        <option value="Oriental Languages and Cultures">Oriental Languages and Cultures</option>
-                                        <option value="Orthopaedics">Orthopaedics</option>
-                                        <option value="Palliative Care">Palliative Care</option>
-                                        <option value="Pediatrics and Neonatal Care">Pediatrics and Neonatal Care </option>
-                                        <option value="Pharmaceutical Care">Pharmaceutical Care</option>
-                                        <option value="Pharmaceutical Sciences">Pharmaceutical Sciences </option>
-                                        <option value="Pharmacist">Pharmacist</option>
-                                        <option value="Philosophy">Philosophy </option>
-                                        <option value="Philosophy and Moral Sciences">Philosophy and Moral Sciences</option>
-                                        <option value="Physical Education and Movement Sciences">Physical Education and Movement Sciences </option>
-                                        <option value="Physics">Physics </option>
-                                        <option value="Physics and Astronomy">Physics and Astronomy </option>
-                                        <option value="Podiatry">Podiatry</option>
-                                        <option value="Political Communication">Political Communication</option>
-                                        <option value="Political Science">Political Science </option>
-                                        <option value="Political Science and Sociology">Political Science and Sociology </option>
-                                        <option value="Pop and Rock Music">Pop and Rock Music</option>
-                                        <option value="Primary Care">Primary Care</option>
-                                        <option value="Product Design">Product Design</option>
-                                        <option value="Product Development">Product Development</option>
-                                        <option value="Protestant Theology">Protestant Theology</option>
-                                        <option value="Psychology">Psychology </option>
-                                        <option value="Psychosocial Gerontology">Psychosocial Gerontology</option>
-                                        <option value="Public Administration and Management">Public Administration and Management</option>
-                                        <option value="Public Health Care">Public Health Care</option>
-                                        <option value="Public Safety">Public Safety</option>
-                                        <option value="Real Estate">Real Estate </option>
-                                        <option value="Rehabilitation and Physiotherapy">Rehabilitation and Physiotherapy </option>
-                                        <option value="Retail Management">Retail Management</option>
-                                        <option value="School Development">School Development </option>
-                                        <option value="Senior Citizen Coaching">Senior Citizen Coaching</option>
-                                        <option value="Sinology">Sinology</option>
-                                        <option value="Slavic and East European Studies">Slavic and East European Studies</option>
-                                        <option value="Social and Economic Sciences">Social and Economic Sciences</option>
-                                        <option value="Social Educational Care Work">Social Educational Care Work </option>
-                                        <option value="Social Educational Care Work Management">Social Educational Care Work Management</option>
-                                        <option value="Social Sciences">Social Sciences</option>
-                                        <option value="Social Work">Social Work </option>
-                                        <option value="Social Work and Welfare Studies">Social Work and Welfare Studies</option>
-                                        <option value="Sociology">Sociology</option>
-                                        <option value="Software Engineering">Software Engineering</option>
-                                        <option value="Special Education Needs">Special Education Needs </option>
-                                        <option value="Special educational needs and Remedial Teaching">Special educational needs and Remedial Teaching </option>
-                                        <option value="Speech Language and Hearing Sciences">Speech Language and Hearing Sciences</option>
-                                        <option value="Speech-Language Pathology and Audiology Sciences">Speech-Language Pathology and Audiology Sciences</option>
-                                        <option value="Speech-Language Therapy and Audiology ">Speech-Language Therapy and Audiology </option>
-                                        <option value="Sports and Leisure ">Sports and Leisure </option>
-                                        <option value="Tax Law">Tax Law</option>
-                                        <option value="Teacher: Pre-Primary Education">Teacher: Pre-Primary Education </option>
-                                        <option value="Teacher: Primary Education">Teacher: Primary Education </option>
-                                        <option value="Teacher: Secondary Education">Teacher: Secondary Education </option>
-                                        <option value="Technology for Integrated Water Management">Technology for Integrated Water Management</option>
-                                        <option value="Textile Technology">Textile Technology</option>
-                                        <option value="Theatre and Film Studies">Theatre and Film Studies</option>
-                                        <option value="Theology and Religious Studies">Theology and Religious Studies </option>
-                                        <option value="Tourism and Leisure Management">Tourism and Leisure Management </option>
-                                        <option value="Transportation Sciences">Transportation Sciences</option>
-                                        <option value="Urban Logistics">Urban Logistics</option>
-                                        <option value="Urbanism and Spatial Planning">Urbanism and Spatial Planning</option>
-                                        <option value="Veterinary Medicine">Veterinary Medicine </option>
-                                        <option value="Visual Arts">Visual Arts </option>
-                                        <option value="Visual Design">Visual Design</option>
-                                        <option value="Wellbeing and Vitality Management">Wellbeing and Vitality Management</option>
-                                        <option value="Wood Technology">Wood Technology</option>
-                                        <option value="">OTHER (Please type it to the right)</option>
-                                    </select>
-                                </div>
-
-                                <div class="md-form md-outline">
-                                    <input type="text" id="title" name="title" class="form-control">
-                                    <label for="title">Other fields</label>
-                                </div>
-                            </div>
-                            <div class="form-row mb-1">
+                            <div class="form-row mb-4">
 
                                 <div class="col">
                                     <select class="browser-default custom-select" id="degreeCountry" name="degreeCountry" required>
@@ -1149,10 +960,94 @@
                                 </div>
 
                                 <div class="col">
-                                    <div class="md-form md-outline">
-                                        <input type="number" min="0" id="experience" name="experience" required class="form-control">
-                                        <label for="experience">Working Experience</label>
-                                    </div>
+                                    <select class="browser-default custom-select" id="town" name="town" required>
+                                        <option name="" value="" selected disabled="disabled">Town/ City</option>
+                                        <option value="Anderlecht">Anderlecht</option>
+                                        <option value="Oudergem">Oudergem</option>
+                                        <option value="Sint-Agatha-Berchem">Sint-Agatha-Berchem</option>
+                                        <option value="Stad Brussel">Stad Brussel</option>
+                                        <option value="Etterbeek">Etterbeek</option>
+                                        <option value="Evere">Evere</option>
+                                        <option value="Vorst">Vorst</option>
+                                        <option value="Ganshoren">Ganshoren</option>
+                                        <option value="Elsene">Elsene</option>
+                                        <option value="Jette">Jette</option>
+                                        <option value="Koekelberg">Koekelberg</option>
+                                        <option value="Sint-Jans-Molenbeek">Sint-Jans-Molenbeek</option>
+                                        <option value="Sint-Gillis">Sint-Gillis</option>
+                                        <option value="Sint-Joost-ten-Node">Sint-Joost-ten-Node</option>
+                                        <option value="Schaarbeek">Schaarbeek</option>
+                                        <option value="Ukkel">Ukkel</option>
+                                        <option value="Watermaal-Bosvoorde">Watermaal-Bosvoorde</option>
+                                        <option value="Sint-Lambrechts-Woluwe">Sint-Lambrechts-Woluwe</option>
+                                        <option value="Sint-Pieters-Woluwe">Sint-Pieters-Woluwe</option>
+                                        <option value="Aalst">Aalst</option>
+                                        <option value="Aarschot">Aarschot</option>
+                                        <option value="Antwerp">Antwerp</option>
+                                        <option value="Beringen">Beringen</option>
+                                        <option value="Bilzen">Bilzen</option>
+                                        <option value="Blankenberge">Blankenberge</option>
+                                        <option value="Borgloon">Borgloon</option>
+                                        <option value="Bree">Bree</option>
+                                        <option value="Bruges">Bruges</option>
+                                        <option value="Damme">Damme</option>
+                                        <option value="Deinze">Deinze</option>
+                                        <option value="Dendermonde">Dendermonde</option>
+                                        <option value="Diest">Diest</option>
+                                        <option value="Diksmuide">Diksmuide</option>
+                                        <option value="Dilsen-Stokkem">Dilsen-Stokkem</option>
+                                        <option value="Eeklo">Eeklo</option>
+                                        <option value="Geel">Geel</option>
+                                        <option value="Genk">Genk</option>
+                                        <option value="Ghent">Ghent</option>
+                                        <option value="Geraardsbergen">Geraardsbergen</option>
+                                        <option value="Gistel">Gistel</option>
+                                        <option value="Halen">Halen</option>
+                                        <option value="Halle">Halle</option>
+                                        <option value="Hamont-Achel">Hamont-Achel</option>
+                                        <option value="Harelbeke">Harelbeke</option>
+                                        <option value="Hasselt">Hasselt</option>
+                                        <option value="Herentals">Herentals</option>
+                                        <option value="Herk-de-Stad">Herk-de-Stad</option>
+                                        <option value="Hoogstraten">Hoogstraten</option>
+                                        <option value="Ypres">Ypres</option>
+                                        <option value="Izegem">Izegem</option>
+                                        <option value="Kortrijk">Kortrijk</option>
+                                        <option value="Landen">Landen</option>
+                                        <option value="Leuven">Leuven</option>
+                                        <option value="Lier">Lier</option>
+                                        <option value="Lo-Reninge">Lo-Reninge</option>
+                                        <option value="Lokeren">Lokeren</option>
+                                        <option value="Lommel">Lommel</option>
+                                        <option value="Maaseik">Maaseik</option>
+                                        <option value="Mechelen">Mechelen</option>
+                                        <option value="Menen">Menen</option>
+                                        <option value="Mesen">Mesen</option>
+                                        <option value="Mortsel">Mortsel</option>
+                                        <option value="Nieuwpoort">Nieuwpoort</option>
+                                        <option value="Ninove">Ninove</option>
+                                        <option value="Ostend">Ostend</option>
+                                        <option value="Oudenaarde">Oudenaarde</option>
+                                        <option value="Oudenburg">Oudenburg</option>
+                                        <option value="Peer">Peer</option>
+                                        <option value="Poperinge">Poperinge</option>
+                                        <option value="Roeselare">Roeselare</option>
+                                        <option value="Ronse">Ronse</option>
+                                        <option value="Scherpenheuvel-Zichem">Scherpenheuvel-Zichem</option>
+                                        <option value="Sint-Niklaas">Sint-Niklaas</option>
+                                        <option value="Sint-Truiden">Sint-Truiden</option>
+                                        <option value="Tielt">Tielt</option>
+                                        <option value="Tienen">Tienen</option>
+                                        <option value="Tongeren">Tongeren</option>
+                                        <option value="Torhout">Torhout</option>
+                                        <option value="Turnhout">Turnhout</option>
+                                        <option value="Veurne">Veurne</option>
+                                        <option value="Vilvoorde">Vilvoorde</option>
+                                        <option value="Waregem">Waregem</option>
+                                        <option value="Wervik">Wervik</option>
+                                        <option value="Zottegem">Zottegem</option>
+                                        <option value="Zoutleeuw">Zoutleeuw</option>
+                                    </select>
                                 </div>
 
                             </div>
