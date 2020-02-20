@@ -14,13 +14,12 @@ $datenbank = "db/datenbank.sqt";
 if(isset($_POST['getir']))
 {
     $level = $_POST['level'];
-    // search in all table columns
-    // using concat mysql function
     $result = $conn->query("SELECT * FROM her WHERE education = '$level'");
 }
  else {
     $result = $conn->query("SELECT * FROM her");
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,6 +43,7 @@ if(isset($_POST['getir']))
 
         th {
             color: darkblue;
+            background-color: lightgray;
         }
 
         .level {
@@ -63,6 +63,7 @@ if(isset($_POST['getir']))
                     <option value="Bachelor">Bachelor</option>
                     <option value="Master">Master</option>
                     <option value="PhD">PhD</option>
+                   <!-- <option value="All">All</option> -->
                 </select>
             </div><br>
             <input type="submit" name="getir" value="Filter" style="width:150px; height:50px;"><br><br>
@@ -95,7 +96,6 @@ if(isset($_POST['getir']))
             <td><?php echo $row['degreeCountry'];?></td>
             <td><?php echo $row['experience'];?></td>
             <td><?php echo $row['email'];?></td>
-            <td><button type="button"><?php echo "send an email";?></button></td>
         </tr>
         <?php endwhile;?>
     </table>
